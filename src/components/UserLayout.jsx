@@ -1,13 +1,12 @@
+import React from "react";
+import NavbarMain from "../styles/navbar/Navbar";
+import { IconButton, Tooltip } from "@material-tailwind/react";
+import {Outlet} from "react-router-dom"
 
-import SliderSection from "./sliderSection/SliderSection";
-import SubHeroSection from "./subHeroSection/SubHeroSection";
-import Collections from "./collections/Collections";
-import Products from "./products/Products";
-
-const HomePage = () => {
+const userLayout = () => {
   return (
-    <div className="">
-      {/* <div className="bg-[#24c790]">
+    <div>
+      <div className="bg-[#24c790]">
         <p className="text-center text-white pt-3 pb-3 lg:text-xl md:text-xl font-medium sm:text-sm">
           Like what you see? You can download it{" "}
           <a href="#" className="underline decoration-1">
@@ -164,15 +163,10 @@ const HomePage = () => {
           </Tooltip>
         </div>
       </div>
-      <NavbarMain/> */}
-      <SliderSection/>
-      <SubHeroSection/>
-      <Collections/>
-      <Products/>
-      
+      <NavbarMain />
+      <Outlet/>
     </div>
-    
   );
 };
 
-export default HomePage;
+export default userLayout;

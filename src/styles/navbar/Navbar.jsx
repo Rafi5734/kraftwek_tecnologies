@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 const NavbarMain = () => {
@@ -16,20 +17,20 @@ const NavbarMain = () => {
           <div className="hidden md:block">
             <ul className="flex space-x-4">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to={"/"}
                   className="font-bold me-10 text-black hover:text-orange-500 hover:border-orange-500 border-b-2 border-transparent transition duration-300"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to={"/about-us"}
                   className="font-bold me-10 text-black hover:text-orange-500 hover:border-orange-500 border-b-2 border-transparent transition duration-300"
                 >
-                  About
-                </a>
+                  About Us
+                </Link>
               </li>
               <li>
                 <a
@@ -46,6 +47,14 @@ const NavbarMain = () => {
                 >
                   Contact
                 </a>
+              </li>
+              <li>
+                <Link
+                  to={"/faqs"}
+                  className="font-bold me-10 text-black hover:text-orange-500 hover:border-orange-500 border-b-2 border-transparent transition duration-300"
+                >
+                  FAQs
+                </Link>
               </li>
             </ul>
           </div>
@@ -79,14 +88,14 @@ const NavbarMain = () => {
           <div className="md:hidden flex justify-end">
             <ul className="flex flex-col space-y-4 mt-4">
               <li>
-                <a href="#" className="font-bold text-black hover:text-orange-500 underline underline-offset-1">
+                <Link to={"/"} className="font-bold text-black hover:text-orange-500 underline underline-offset-1">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="font-bold text-black hover:text-orange-500 underline underline-offset-1">
-                  About
-                </a>
+                <Link to={"/about-us"} className="font-bold text-black hover:text-orange-500 underline underline-offset-1">
+                  About Us
+                </Link>
               </li>
               <li>
                 <a href="#" className="font-bold text-black hover:text-orange-500 underline underline-offset-1">
@@ -97,6 +106,11 @@ const NavbarMain = () => {
                 <a href="#" className="font-bold text-black hover:text-orange-500 underline underline-offset-1">
                   Contact
                 </a>
+              </li>
+              <li>
+                <Link to={"/faqs"} className="font-bold text-black hover:text-orange-500 underline underline-offset-1">
+                  FAQs
+                </Link>
               </li>
             </ul>
           </div>
