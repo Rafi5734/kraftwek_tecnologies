@@ -7,11 +7,13 @@ import HomePage from "./components/pages/homePage/HomePage.jsx";
 import AboutUs from "./components/pages/homePage/aboutUs/AboutUs.jsx";
 import UserLayout from "./components/UserLayout.jsx";
 import Faqs from "./components/pages/homePage/faqs/Faqs.jsx";
+import { Provider } from "react-redux";
+import { store } from "./app/store.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <UserLayout/>,
+    element: <UserLayout />,
     // errorElement: <ErrorPage />,
     // loader: rootLoader,
     children: [
@@ -33,8 +35,10 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router}>
-      <App />
-    </RouterProvider>
+    <Provider store={store}>
+      <RouterProvider router={router}>
+        <App />
+      </RouterProvider>
+    </Provider>
   </React.StrictMode>
 );
