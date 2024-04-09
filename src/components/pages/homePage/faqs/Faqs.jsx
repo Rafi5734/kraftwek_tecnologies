@@ -8,7 +8,7 @@ import { Button } from "@material-tailwind/react";
 
 const Faqs = () => {
   return (
-    <div>
+    <div className="ms-3 me-3">
       <div className="container my-24 mx-auto md:px-6">
         <section className="mb-32">
           <div className="flex flex-wrap">
