@@ -22,6 +22,7 @@ npm run dev
 
 ![screencapture-kraftwek-tecnologies-vercel-app-products-10-2024-04-10-13_20_49](https://github.com/Rafi5734/kraftwek_tecnologies/assets/75684189/cf3bc307-7904-43a6-9436-d62bbb91dc16)
 
+![screencapture-kraftwek-tecnologies-vercel-app-2024-04-10-13_21_36](https://github.com/Rafi5734/kraftwek_tecnologies/assets/75684189/0c7a8908-ff16-495a-8f2e-08209805e8d6)
 
 
 ## CONTACT WITH ME:
