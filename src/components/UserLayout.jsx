@@ -1,7 +1,7 @@
 import React from "react";
 import NavbarMain from "../styles/navbar/Navbar";
 import { IconButton, Tooltip } from "@material-tailwind/react";
-import {Outlet} from "react-router-dom"
+import { Link, Outlet } from "react-router-dom";
 
 const userLayout = () => {
   return (
@@ -97,11 +97,13 @@ const userLayout = () => {
           </Tooltip>
         </div>
         <div>
-          <img
-            className="h-full lg:w-48 md:w-32 sm:24"
-            src="https://elyssi.redpixelthemes.com/assets/img/logo-elyssi.svg"
-            alt="nature image"
-          />
+          <Link to={"/"}>
+            <img
+              className="h-full lg:w-48 md:w-32 sm:24"
+              src="https://elyssi.redpixelthemes.com/assets/img/logo-elyssi.svg"
+              alt="nature image"
+            />
+          </Link>
         </div>
         <div className="flex">
           <Tooltip content="Your Dashboard">
@@ -164,7 +166,7 @@ const userLayout = () => {
         </div>
       </div>
       <NavbarMain />
-      <Outlet/>
+      <Outlet />
     </div>
   );
 };

@@ -62,13 +62,13 @@ const Products = () => {
                 {productData?.products?.map((product, index) => (
                   <Card
                     key={index}
-                    className="w-full max-w-full shadow-lg mb-8"
+                    className="w-full shadow-lg mb-8"
                   >
                     <CardHeader floated={false} color="blue-gray">
                       <img
                         src={product?.thumbnail}
                         alt="ui/ux review check"
-                        // style={{height: "300px"}}
+                        style={{height: "300px"}}
                       />
                       <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
                       <IconButton
