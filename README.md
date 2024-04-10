@@ -18,6 +18,9 @@ npm run dev
 
 ![screencapture-kraftwek-tecnologies-vercel-app-faqs-2024-04-10-13_18_22](https://github.com/Rafi5734/kraftwek_tecnologies/assets/75684189/5bfefe93-5a9d-4e0e-849a-e7f37b2c78f5)
 
+![screencapture-kraftwek-tecnologies-vercel-app-products-10-2024-04-10-13_19_45](https://github.com/Rafi5734/kraftwek_tecnologies/assets/75684189/6c78ade5-e18a-44f0-8f9f-a1289a2aa8e9)
+
+
 
 ## CONTACT WITH ME:
 ### Kamrul Hasun Rafi
