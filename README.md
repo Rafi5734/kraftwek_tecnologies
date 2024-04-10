@@ -11,6 +11,7 @@ npm run dev
 ```
 
 ## Project Screen Short
+![screencapture-localhost-5173-2024-04-10-13_14_40](https://github.com/Rafi5734/kraftwek_tecnologies/assets/75684189/9da67f89-f9b3-49af-855d-9919fc8ca616)
 
 
 
