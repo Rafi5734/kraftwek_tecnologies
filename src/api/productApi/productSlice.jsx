@@ -10,7 +10,11 @@ export const productSlice = createApi({
       query: ({ limit, skip }) => `/products/?limit=${limit}&skip=${skip}`,
       providesTags: ["product"],
     }),
+    getSingleProduct: builder.query({
+      query: (productId) => `/products/${productId}`,
+      providesTags: ["product"],
+    }),
   }),
 });
 
-export const { useGetProductsQuery } = productSlice;
+export const { useGetProductsQuery, useGetSingleProductQuery } = productSlice;

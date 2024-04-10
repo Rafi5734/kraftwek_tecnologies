@@ -11,12 +11,12 @@ import {
 } from "@material-tailwind/react";
 import { useGetProductsQuery } from "../../../../api/productApi/productSlice";
 import { CirclesWithBar } from "react-loader-spinner";
+import { Link } from "react-router-dom";
 
 const Products = () => {
   const [active, setActive] = React.useState(1);
 
   const limit = 10;
-  const pageNumber = 1;
   const { data: productData, isLoading } = useGetProductsQuery({
     limit,
     skip: (active - 1) * 10,
@@ -34,9 +34,6 @@ const Products = () => {
     setActive(active - 1);
   };
 
-  console.log("active", active + 10);
-
-  console.log("productData: ", productData?.products?.length);
   return (
     <div className="ms-3 me-3 mt-14">
       <p className="text-center header_title text-5xl">On sale, only today</p>
@@ -215,9 +212,14 @@ const Products = () => {
                       </div>
                     </CardBody>
                     <CardFooter className="">
-                      <Button size="lg" fullWidth={true}>
-                        Place Order
-                      </Button>
+                      <Link to={`/products/${product?.id}`}>
+                        <Button
+                          size="lg"
+                          fullWidth={true}
+                        >
+                          Place Order
+                        </Button>
+                      </Link>
                     </CardFooter>
                   </Card>
                 ))}

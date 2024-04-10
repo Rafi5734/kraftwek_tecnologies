@@ -23,8 +23,8 @@ const SliderSection = () => {
             disableOnInteraction: false,
           }}
         // scrollbar={{ draggable: false }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
+        // onSwiper={(swiper) => console.log(swiper)}
+        // onSlideChange={() => console.log("slide change")}
       >
         <SwiperSlide className="swiper_slider_1">
           <div className="slider_text header_title text-4xl flex justify-center items-center flex-col w-full h-full">

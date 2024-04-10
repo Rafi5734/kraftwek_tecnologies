@@ -9,6 +9,7 @@ import UserLayout from "./components/UserLayout.jsx";
 import Faqs from "./components/pages/homePage/faqs/Faqs.jsx";
 import { Provider } from "react-redux";
 import { store } from "./app/store.jsx";
+import SingleProduct from "./components/pages/homePage/products/[slug]/SingleProduct.jsx";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "/faqs",
         element: <Faqs />,
+      },
+      {
+        path: "/products/:productId",
+        element: <SingleProduct />,
       },
     ],
   },
